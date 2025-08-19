@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Сервис</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Заголовок -->
+    <div class="header">
+        <h1 id="vpn-title">VPN Сервис</h1>
+        <p id="vpn-subtitle">Безопасность и анонимность в интернете</p>
+    </div>
+
+    <!-- Описание -->
+    <div class="description">
+        <h2 id="vpn-description-title">Что такое VPN?</h2>
+        <p id="vpn-description-text">VPN — это виртуальная частная сеть, которая помогает скрыть ваш реальный IP-адрес, обеспечивая безопасное и анонимное соединение с интернетом. Получите доступ к любому контенту без ограничений и обеспечьте свою конфиденциальность.</p>
+    </div>
+
+    <!-- Цены -->
+    <div class="pricing">
+        <h2>Наши Тарифы</h2>
+        <div class="card" id="price1">
+            <h3 id="price1-title">1 Месяц</h3>
+            <p id="price1-text">200 руб.</p>
+            <button class="buy-btn">Купить</button>
+        </div>
+        <div class="card" id="price2">
+            <h3 id="price2-title">3 Месяца</h3>
+            <p id="price2-text">500 руб.</p>
+            <button class="buy-btn">Купить</button>
+        </div>
+        <div class="card" id="price3">
+            <h3 id="price3-title">6 Месяцев</h3>
+            <p id="price3-text">900 руб.</p>
+            <button class="buy-btn">Купить</button>
+        </div>
+        <div class="card" id="price4">
+            <h3 id="price4-title">12 Месяцев</h3>
+            <p id="price4-text">1500 руб.</p>
+            <button class="buy-btn">Купить</button>
+        </div>
+    </div>
+
+    <!-- Контакты -->
+    <div class="contacts">
+        <h2>Контакты</h2>
+        <p id="contact-text">Если у вас возникли вопросы, напишите нам в Telegram. Мы всегда на связи!</p>
+        <a href="https://t.me/your_telegram_link" class="contact-link" id="contact-link">Написать в Telegram</a>
+    </div>
+
+    <!-- Админ панель -->
+    <div class="admin-panel" id="admin-panel">
+        <h2>Админ Панель</h2>
+        <form id="admin-form">
+            <div>
+                <label for="vpn-title-input">Название VPN:</label>
+                <input type="text" id="vpn-title-input" placeholder="Введите название VPN">
+            </div>
+            <div>
+                <label for="vpn-description-title-input">Заголовок описания:</label>
+                <input type="text" id="vpn-description-title-input" placeholder="Введите заголовок">
+            </div>
+            <div>
+                <label for="vpn-description-text-input">Описание VPN:</label>
+                <textarea id="vpn-description-text-input" placeholder="Введите описание VPN"></textarea>
+            </div>
+
+            <div>
+                <label for="price1-input">Цена 1 месяца:</label>
+                <input type="text" id="price1-input" placeholder="Введите цену 1 месяца">
+            </div>
+            <div>
+                <label for="price2-input">Цена 3 месяцев:</label>
+                <input type="text" id="price2-input" placeholder="Введите цену 3 месяцев">
+            </div>
+            <div>
+                <label for="price3-input">Цена 6 месяцев:</label>
+                <input type="text" id="price3-input" placeholder="Введите цену 6 месяцев">
+            </div>
+            <div>
+                <label for="price4-input">Цена 12 месяцев:</label>
+                <input type="text" id="price4-input" placeholder="Введите цену 12 месяцев">
+            </div>
+            <div>
+                <label for="contact-link-input">Ссылка на Telegram:</label>
+                <input type="text" id="contact-link-input" placeholder="Введите ссылку на Telegram">
+            </div>
+            <button type="submit">Сохранить изменения</button>
+        </form>
+    </div>
+
+    <!-- Страница входа для администратора -->
+    <div class="login" id="login-form">
+        <h2>Вход в админ-панель</h2>
+        <input type="text" id="login" placeholder="Введите логин">
+        <input type="password" id="password" placeholder="Введите пароль">
+        <button id="login-btn">Войти</button>
+        <p id="login-error" style="color:red; display:none;">Неверный логин или пароль! Попробуйте снова.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
