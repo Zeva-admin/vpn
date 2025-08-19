@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Сервис</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .header {
+            background: #333;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        .header h1 {
+            font-size: 3em;
+            color: #f5a623;
+            animation: fadeIn 2s ease-out;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #aaa;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .description, .pricing, .contacts {
+            padding: 50px 10%;
+            text-align: center;
+        }
+        .description {
+            background: #222;
+        }
+        .pricing {
+            background: #333;
+        }
+        .contacts {
+            background: #444;
+        }
+
+        .pricing .card {
+            background: #555;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .pricing .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .button {
+            padding: 15px 30px;
+            background: #f5a623;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #ff9f00;
+        }
+
+        .contact-link {
+            color: #f5a623;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .contact-link:hover {
+            color: #ff9f00;
+        }
+
+        @media (max-width: 768px) {
+            .description, .pricing, .contacts {
+                padding: 30px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>VPN Сервис</h1>
+        <p>Безопасность и анонимность в интернете</p>
+    </div>
+
+    <div class="description">
+        <h2>О нашем VPN</h2>
+        <p>Наш VPN-сервис гарантирует полную анонимность, безопасность и быстрое соединение по всему миру. Забудьте о блокировках и отслеживании в интернете!</p>
+    </div>
+
+    <div class="pricing">
+        <h2>Цены</h2>
+        <div class="card">
+            <h3>1 Месяц</h3>
+            <p>200 руб.</p>
+            <button class="button" onclick="window.location.href='https://t.me/your_telegram_link'">Купить</button>
+        </div>
+        <div class="card">
+            <h3>3 Месяца</h3>
+            <p>500 руб.</p>
+            <button class="button" onclick="window.location.href='https://t.me/your_telegram_link'">Купить</button>
+        </div>
+        <div class="card">
+            <h3>6 Месяцев</h3>
+            <p>900 руб.</p>
+            <button class="button" onclick="window.location.href='https://t.me/your_telegram_link'">Купить</button>
+        </div>
+        <div class="card">
+            <h3>12 Месяцев</h3>
+            <p>1500 руб.</p>
+            <button class="button" onclick="window.location.href='https://t.me/your_telegram_link'">Купить</button>
+        </div>
+    </div>
+
+    <div class="contacts">
+        <h2>Контакты</h2>
+        <p>Для поддержки или вопросов пишите нам в <a href="https://t.me/your_telegram_link" class="contact-link">Telegram</a></p>
+    </div>
+
+</body>
+</html>
