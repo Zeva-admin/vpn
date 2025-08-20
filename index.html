@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Сервис</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Заголовок -->
+    <header class="header">
+        <h1>VPN Сервис</h1>
+        <p>Безопасность и анонимность в интернете</p>
+    </header>
+
+    <!-- Вкладки -->
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('description')">Описание</button>
+        <button class="tab-button" onclick="showTab('pricing')">Цены</button>
+        <button class="tab-button" onclick="showTab('contacts')">Контакты</button>
+    </div>
+
+    <!-- Описание -->
+    <div id="description" class="tab-content active">
+        <h2>Что такое VPN?</h2>
+        <p>VPN (Virtual Private Network) — это технология, которая позволяет скрывать вашу реальную геолокацию и защищает ваши данные от посторонних глаз, обеспечивая высокий уровень безопасности и анонимности в интернете.</p>
+    </div>
+
+    <!-- Цены -->
+    <div id="pricing" class="tab-content">
+        <h2>Наши Тарифы</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>1 Месяц</h3>
+                <p>200 руб.</p>
+                <button class="buy-btn" onclick="window.location.href='https://t.me/alexsey0010'">Купить</button>
+            </div>
+            <div class="card">
+                <h3>3 Месяца</h3>
+                <p>500 руб.</p>
+                <button class="buy-btn" onclick="window.location.href='https://t.me/alexsey0010'">Купить</button>
+            </div>
+            <div class="card">
+                <h3>6 Месяцев</h3>
+                <p>900 руб.</p>
+                <button class="buy-btn" onclick="window.location.href='https://t.me/alexsey0010'">Купить</button>
+            </div>
+            <div class="card">
+                <h3>12 Месяцев</h3>
+                <p>1500 руб.</p>
+                <button class="buy-btn" onclick="window.location.href='https://t.me/alexsey0010'">Купить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контакты -->
+    <div id="contacts" class="tab-content">
+        <h2>Контакты</h2>
+        <p>Если у вас возникли вопросы, напишите нам в Telegram. Мы всегда на связи!</p>
+        <a href="https://t.me/alexsey0010" class="contact-link">Написать в Telegram</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
